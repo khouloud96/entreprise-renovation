@@ -1,0 +1,146 @@
+.header {
+  width: 100%;
+  color: #000;
+  font-size: 20px;
+  font-family: Quicksand, sans-serif;
+  font-weight: 500;
+  padding-top: 120px;
+  background-image: url("/calcul-devis.jpg");
+  background-size: cover;
+  height: 380px;
+  margin-bottom: 40px;
+}
+
+.header h1 {
+  margin: 0;
+  padding-top: 3rem;
+  font-size: 80px;
+  text-align: center;
+  text-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+  color: white;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 700;
+  margin-bottom: 70px;
+}
+
+.header p {
+  text-align: center;
+  line-height: 35px;
+  font-size: 20px;
+  text-align: center;
+  color: #fff;
+  font-weight: 600;
+  width: 50%;
+  margin-left: 373px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.contactForm h1 {
+  font-family: Quicksand, sans-serif;
+  text-align: center;
+  font-weight: 600;
+  font-size: 30px;
+  color: #000;
+}
+.contactForm p {
+  font-weight: 400;
+  text-align: center;
+  padding-bottom: 36px;
+  margin-top: -15px;
+  font-size: 14px;
+  color: #000;
+  font-family: Quicksand, sans-serif;
+}
+
+.formContainer {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+}
+
+.highlight {
+  background: linear-gradient(90deg, #00bfa6, #17786b);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.formGroup {
+  position: relative; /*Important for floating labels*/
+  flex: 1;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.formGroup input,
+.formGroup textarea {
+  font-size: 1rem;
+  border: 1px solid #000;
+  border-radius: 2px;
+  width: 100%;
+  background-color: transparent;
+  padding: 10px;
+  transition: all 0.2s ease;
+}
+
+.formGroup input:focus,
+.formGroup textarea:focus {
+  border: 2px solid #00bfa6;
+  outline: none;
+}
+
+/*floating label*/
+.formGroup label {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  pointer-events: none;
+  transition: all 0.2s ease;
+  font-size: 1rem;
+  color: #666;
+  z-index: 0;
+}
+
+.formGroup .filled {
+  top: -10px;
+  left: 10px;
+  transform: translateY(0%);
+  background-color: white;
+  padding: 0 5px;
+  font-size: 0.8rem;
+  color: #000;
+}
+
+.formGroup textarea {
+  height: 150px;
+  resize: vertical;
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding-top: 85px;
+    height: 300px;
+  }
+
+  .header h1 {
+    font-size: 40px;
+  }
+
+  .header p {
+    font-size: 14px;
+    margin-left: 37px;
+    line-height: 1;
+    width: 82%;
+  }
+
+  .contactForm {
+    width: 100%;
+    margin-left: -7px;
+  }
+}

@@ -1,0 +1,22 @@
+.link {
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+}
+
+.link:hover,
+.link:active {
+  background: linear-gradient(90deg, #a8c8c4, #127a6c);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 18px rgba(33, 45, 174, 0.8);
+}
+
+.active {
+  background: linear-gradient(90deg, #00bfa6, #2ab5a2);
+  background-clip: text;
+  background-color: #000;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 18px rgba(33, 45, 174, 0.8);
+}

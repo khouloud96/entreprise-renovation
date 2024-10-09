@@ -1,0 +1,80 @@
+.avisContainer {
+  padding: 20px;
+  text-align: center;
+  font-family: "Poppins-extralight", sans-serif;
+}
+
+.header {
+  height: 105px;
+  background-color: rgb(237, 235, 232);
+  background: linear-gradient(90deg, #00bfa6, #2ab5a2);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 18px rgba(33, 45, 174, 0.8);
+}
+
+.avisContainer h2 {
+  margin-top: 130px;
+  font-size: 40px;
+  /*color: #098574;*/
+  color: #000;
+  padding-top: 20px;
+}
+
+.avisClients {
+  display: flex;
+  justify-content: space-around;
+  gap: 50px;
+  margin-top: 60px;
+  margin-right: 200px;
+  margin-left: 200px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+}
+
+.avisBox {
+  background-color: #f9f9f9;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  width: 88%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.avisBox p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+
+.avisBox strong {
+  color: #60b1a7;
+  line-height: 4;
+}
+
+.icon {
+  color: #098574;
+}
+
+.icon svg {
+  width: 3rem;
+  height: 3rem;
+}
+
+@media (max-width: 768px) {
+  .avisClients {
+    flex-direction: column;
+    gap: 20px;
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .avisContainer h2 {
+    font-size: 35px;
+  }
+
+  .avisBox {
+    width: 90%;
+  }
+}

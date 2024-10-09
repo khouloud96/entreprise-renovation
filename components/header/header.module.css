@@ -1,0 +1,132 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1rem;
+  background-color: #fff;
+  width: 100%;
+  transition: box-shadow 0.3s ease-in-out;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  height: 60px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  padding-left: 40px;
+  text-decoration: none;
+}
+
+.logo img {
+  margin-left: 112px;
+  width: 92px;
+  height: 92px;
+}
+
+.header h1 {
+  font-family: "Poppins-extralight", sans-serif;
+  color: #5a77c8;
+  font-weight: 500;
+  padding-left: 15px;
+}
+
+.navLinks {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 150px;
+}
+
+.navLinks li {
+  padding: 10px 6px;
+}
+.navLinks a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 600;
+  font-size: 18px;
+  font-family: "Poppins-extralight", sans-serif;
+  transition: color 0.3s ease;
+}
+
+.navLinks a:hover {
+  color: #5a77c8;
+}
+
+.scrolled {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+
+@media (max-width: 768px) {
+  .navLinks {
+    display: none; /* Hide the menu initially on mobile */
+  }
+
+  .header {
+    flex-direction: column;
+    padding: 0.5rem 1rem;
+  }
+
+  .logo {
+    padding-right: 400px;
+    padding-left: 0px;
+  }
+
+  .logo img {
+    width: 68px;
+    height: 68px;
+  }
+
+  .logo h1 {
+    font-size: 1.25rem;
+  }
+
+  .icons {
+    font-size: 24px;
+    cursor: pointer;
+    display: block;
+    background-color: #fff;
+    margin-left: 234px;
+    margin-top: -49px;
+  }
+
+  .icon {
+    color: #5a77c8;
+  }
+
+  .icon svg {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .nav.open .navLinks {
+    display: flex; /* Show the menu when open */
+    flex-direction: column;
+    gap: 0;
+    text-align: center;
+    padding: 0 0;
+    width: 100%;
+  }
+
+  .nav {
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    margin-top: 11px;
+    margin-right: -96px;
+    width: 62%;
+  }
+
+  .navLinks li {
+    padding: 10px 0; /* Adjust spacing between links */
+  }
+
+  .navLinks a {
+    font-size: 12px;
+  }
+}

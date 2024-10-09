@@ -1,0 +1,31 @@
+.section {
+  font-family: "poppins-extralight", sans-serif;
+  font-size: 12px;
+  line-height: 1.5;
+
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: overlay;
+  padding: 1px 20px;
+  margin-bottom: 6px;
+}
+
+.carouselTitle {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.photosContainer {
+  padding: 1px 10px;
+  max-width: 60rem;
+  margin: 2rem auto;
+  background-image: url("/images/business-logo.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: cover;
+}
+
+.CarouselContainer {
+  position: relative;
+}

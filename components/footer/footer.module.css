@@ -1,0 +1,164 @@
+/* styles/Footer.module.css */
+.footer {
+  background-color: #323c58;
+  color: #ffffff;
+  /*background-image: url("/logo-entreprise.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;*/
+  padding: 40px;
+  text-align: center;
+  position: relative;
+}
+
+.footerNav {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 10px;
+}
+
+.footerNav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 20px;
+  padding-bottom: 40px;
+}
+
+.footerNav a:hover {
+  color: #00bfa6;
+}
+
+.logoContainer {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-left: -192px;
+}
+
+.logoContainer a {
+  position: absolute;
+  margin-left: 272px;
+  margin-top: -45px;
+}
+
+.logoContainer span {
+  width: 15%;
+  text-align: left;
+  position: absolute;
+  margin-left: 277px;
+  margin-top: 102px;
+  font-size: 14px;
+}
+
+.logo img {
+  height: 204px;
+  width: 204px;
+}
+
+.socialLinks {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 10px;
+  margin-left: -58px;
+  margin-top: -25px;
+}
+
+.socialLinks a {
+  display: inline-block;
+  padding: 0.5rem;
+}
+
+.privacyPolicy {
+  text-align: center;
+  margin-top: 30px;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 26px;
+  margin-left: 800px;
+}
+
+.privacyPolicy ul {
+  list-style-type: none;
+}
+
+.linkPrivacy {
+  color: #9d9393;
+  font-size: 14px;
+  text-decoration: none;
+  margin: 0 10px;
+  display: inline-block;
+}
+
+.linkPrivacy:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.floatingButton {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #dbe1f6;
+  color: #5b4d4d;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+  font-size: 16px;
+}
+.Image {
+  border-radius: 30px;
+}
+
+.floatingButton span {
+  margin-left: 10px;
+}
+
+.floatingButton:hover {
+  background-color: #00bfa6;
+}
+
+.footerDown {
+  margin-top: 10px;
+  margin-left: 40px;
+}
+
+.footerDown h4 {
+  font-size: 12px;
+  text-align: center;
+  font-weight: 400;
+}
+
+@media (max-width: 768px) {
+  .footerNav {
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  .footerNav a {
+    padding-bottom: 0px;
+  }
+
+  .socialLinks {
+    flex-direction: row;
+    gap: 0.75rem;
+    margin-top: 5px;
+  }
+
+  .floatingButton {
+    bottom: 14px;
+    right: 18px;
+    font-size: 14px;
+  }
+
+  .privacyPolicy {
+    margin-top: 0;
+    margin-left: -40px;
+  }
+}

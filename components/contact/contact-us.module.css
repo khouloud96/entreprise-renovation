@@ -1,0 +1,132 @@
+.container {
+  font-family: Quicksand, sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 18px 18px;
+  margin: 40px 270px;
+}
+
+.imageContainer {
+  margin-right: 130px;
+  margin-left: 50px;
+}
+
+.image {
+  border-radius: 10px;
+}
+
+.content {
+  flex: 1;
+  text-align: left;
+}
+
+.content h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.content p {
+  font-size: 1rem;
+  margin-bottom: 30px;
+  color: #666;
+}
+
+.buttonContainer {
+  display: flex;
+  position: relative;
+  align-items: center;
+  column-gap: 15px;
+}
+
+.button {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 500;
+  background-color: #00bfa5;
+  border: 2px solid #00bfa5;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.button a {
+  display: inline-block;
+  color: #ffffff;
+  font-weight: 500;
+  text-decoration: none;
+  margin: 5px 0px;
+}
+
+.button:hover {
+  background-color: #009f8a;
+}
+
+.buttonLink {
+  display: inline-block;
+  color: #00bfa5;
+  font-weight: 500;
+  text-decoration: none;
+  margin-bottom: 11px;
+}
+
+.buttonLink img {
+  transition: margin 0.3s ease;
+}
+
+.buttonLink:hover {
+  color: #009f8a;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+  }
+
+  .imageContainer {
+    margin-bottom: 20px;
+  }
+
+  .content h2 {
+    font-size: 18px;
+  }
+
+  .content p {
+    font-size: 14px;
+  }
+
+  .buttonLink {
+    font-size: 14px;
+  }
+
+  .imageContainer {
+    margin: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .content h2 {
+    font-size: 18px;
+  }
+
+  .content p {
+    font-size: 14px;
+  }
+
+  .button {
+    padding: 8px 16px;
+  }
+
+  .buttonLink {
+    font-size: 14px;
+  }
+}

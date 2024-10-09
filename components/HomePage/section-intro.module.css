@@ -1,0 +1,80 @@
+.sectionIntro {
+  height: 650px;
+  background-image: url(/images/construction-immeuble.webp);
+  background-size: cover;
+  padding: 10px;
+  margin-top: 60px;
+  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 6px;
+}
+.sectionIntro h1 {
+  text-align: center;
+  color: #ffffff;
+  font-size: 4em;
+  font-weight: 500;
+}
+
+.sectionIntro header {
+  display: flex;
+  flex: 4;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.linksWrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  padding: 80px 0;
+}
+
+.link {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  padding: 5px 10px;
+}
+
+.link:hover {
+  background-color: #ffffff;
+  color: #95999e;
+  text-decoration: none;
+}
+
+/* Contenu fixe (au-dessus des images) */
+.content {
+  position: relative;
+  text-align: center;
+  z-index: 1; /* Met le texte au-dessus des images */
+}
+
+/* Div fixée */
+.fixedBox {
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 1px solid white;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+@media (max-width: 768px) {
+  .sectionIntro {
+    height: 600px;
+    margin-top: 80px;
+  }
+  .sectionIntro h1 {
+    font-size: 25px;
+  }
+
+  .linksWrapper {
+    flex-direction: column;
+    padding: 20px 0;
+  }
+}
