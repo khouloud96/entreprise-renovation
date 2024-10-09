@@ -3,8 +3,8 @@ import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.css";
 import classes from "./carousel.module.css";
-import SwiperCore, { Navigation } from "swiper";
-
+import SwiperCore from "swiper";
+import { Navigation } from "swiper/modules";
 // Import the Swiper navigation plugin
 SwiperCore.use([Navigation]);
 

@@ -1,5 +1,6 @@
 import Image from "next/image";
-import ModalBackdrop from "../../../components/modal/modal-backdrop";
+import ModalBackdrop from "../../../../components/modal/modal-backdrop";
+
 function InterceptedImagePage({ params }) {
   const projectItem = params;
 
@@ -21,4 +22,4 @@ function InterceptedImagePage({ params }) {
   );
 }
 
-export default ImagePage;
+export default InterceptedImagePage;
