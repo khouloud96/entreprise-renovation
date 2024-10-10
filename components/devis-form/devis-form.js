@@ -7,6 +7,8 @@ import Button from "../ui/button";
 function DevisForm() {
   const notificationCtx = useContext(NotificationContext);
 
+  const [formErrors, setFormErrors] = useState({});
+
   const [formValues, setFormValues] = useState({
     name: "",
     lastName: "",
@@ -28,6 +30,24 @@ function DevisForm() {
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setFormValues({ ...formValues, [name]: value });
+
+    const fieldError = validateField(name, value);
+    setFormErrors((prevErrors) => ({
+      ...prevErrors,
+      [name]: fieldError,
+    }));
+  };
+
+  // Validate email format
+  const validateEmail = (email) => {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
+  };
+
+  // Validate phone number (French format example)
+  const validatePhone = (phone) => {
+    const phoneRegex = /^\d{10}$/;
+    return phoneRegex.test(phone);
   };
 
   // Handle focus state change
@@ -40,10 +60,53 @@ function DevisForm() {
   const handleBlur = (e) => {
     const { name } = e.target;
     setIsFocused({ ...isFocused, [name]: false });
+
+    const fieldError = validateField(name, formValues[name]);
+    setFormErrors((prevErrors) => ({
+      ...prevErrors,
+      [name]: fieldError,
+    }));
+  };
+
+  const validateField = (fieldName, value) => {
+    switch (fieldName) {
+      case "name":
+        return value.trim() ? "" : "Prénom requis";
+      case "lastName":
+        return value.trim() ? "" : "Nom de famille requis";
+      case "phone":
+        return validatePhone(value)
+          ? ""
+          : "Numéro de téléphone invalide (10 chiffres requis)";
+      case "email":
+        return validateEmail(value) ? "" : "Adresse email invalide";
+      case "address":
+        return value.trim() ? "" : "Adresse des travaux requise";
+      case "comment":
+        return value.trim() ? "" : "Veuillez ajouter un commentaire";
+      default:
+        return "";
+    }
+  };
+
+  const validateForm = () => {
+    const errors = {};
+    Object.keys(formValues).forEach((key) => {
+      const error = validateField(key, formValues[key]);
+      if (error) {
+        errors[key] = error;
+      }
+    });
+    setFormErrors(errors);
+    return Object.keys(errors).length === 0;
   };
 
   function handleFormSubmit(e) {
     e.preventDefault();
+
+    if (!validateForm()) {
+      return;
+    }
 
     notificationCtx.showNotification({
       title: "Obtenir un devis en cours...",
@@ -141,6 +204,9 @@ function DevisForm() {
             >
               Prénom
             </label>
+            {formErrors.name && (
+              <p className={classes.error}>{formErrors.name}</p>
+            )}
           </div>
           <div className={classes.formGroup}>
             <input
@@ -163,6 +229,9 @@ function DevisForm() {
             >
               Nom de famille
             </label>
+            {formErrors.lastName && (
+              <p className={classes.error}>{formErrors.lastName}</p>
+            )}
           </div>
           <div className={classes.formGroup}>
             <input
@@ -185,6 +254,9 @@ function DevisForm() {
             >
               Téléphone
             </label>
+            {formErrors.phone && (
+              <p className={classes.error}>{formErrors.phone}</p>
+            )}
           </div>
           <div className={classes.formGroup}>
             <input
@@ -207,6 +279,9 @@ function DevisForm() {
             >
               E-mail
             </label>
+            {formErrors.email && (
+              <p className={classes.error}>{formErrors.email}</p>
+            )}
           </div>
           <div className={classes.formGroup}>
             <input
@@ -229,6 +304,9 @@ function DevisForm() {
             >
               Adresse des travaux
             </label>
+            {formErrors.address && (
+              <p className={classes.error}>{formErrors.address}</p>
+            )}
           </div>
           <div className={classes.formGroup}>
             <textarea
@@ -250,6 +328,9 @@ function DevisForm() {
             >
               Commentaires
             </label>
+            {formErrors.comment && (
+              <p className={classes.error}>{formErrors.comment}</p>
+            )}
           </div>
           <div className={classes.formGroup}>
             <Button>Envoyer</Button>

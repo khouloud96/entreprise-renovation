@@ -6,8 +6,8 @@ function SectionPhotos() {
     <section
       className={classes.section}
       data-aos="zoom-up"
-      data-aos-duration="1000"
-      data-aos-delay="500"
+      data-aos-duration="800"
+      data-aos-delay="200"
       data-aos-offset="200"
       data-aos-easing="ease-in-out"
     >

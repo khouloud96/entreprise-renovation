@@ -13,8 +13,8 @@ function SectionPhotos({ content }) {
   return (
     <section
       data-aos="fade-up"
-      data-aos-duration="1000"
-      data-aos-delay="500"
+      data-aos-duration="800"
+      data-aos-delay="200"
       data-aos-offset="200"
       data-aos-easing="ease-in-out"
     >
@@ -24,8 +24,8 @@ function SectionPhotos({ content }) {
           <div
             className={classes.serviceBox}
             data-aos="fade-right"
-            data-aos-duration="1000"
-            data-aos-delay="500"
+            data-aos-duration="800"
+            data-aos-delay="200"
             data-aos-offset="200"
             data-aos-easing="ease-in-out"
           >
@@ -46,8 +46,8 @@ function SectionPhotos({ content }) {
           <div
             className={classes.serviceBox}
             data-aos="fade-right"
-            data-aos-duration="1000"
-            data-aos-delay="500"
+            data-aos-duration="800"
+            data-aos-delay="200"
             data-aos-offset="200"
             data-aos-easing="ease-in-out"
           >
@@ -66,8 +66,8 @@ function SectionPhotos({ content }) {
           <div
             className={classes.serviceBox}
             data-aos="fade-right"
-            data-aos-duration="1000"
-            data-aos-delay="500"
+            data-aos-duration="800"
+            data-aos-delay="200"
             data-aos-offset="200"
             data-aos-easing="ease-in-out"
           >

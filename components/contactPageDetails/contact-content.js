@@ -7,6 +7,8 @@ import MyMap from "../map/map";
 function ContactContent() {
   const notificationCtx = useContext(NotificationContext);
 
+  const [formErrors, setFormErrors] = useState({});
+
   const [formValues, setFormValues] = useState({
     name: "",
     email: "",
@@ -24,6 +26,16 @@ function ContactContent() {
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setFormValues({ ...formValues, [name]: value });
+    const fieldError = validateField(name, value);
+    setFormErrors((prevErrors) => ({
+      ...prevErrors,
+      [name]: fieldError,
+    }));
+  };
+
+  const validateEmail = (email) => {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
   };
 
   // Handle focus state change
@@ -36,10 +48,46 @@ function ContactContent() {
   const handleBlur = (e) => {
     const { name } = e.target;
     setIsFocused({ ...isFocused, [name]: false });
+    const fieldError = validateField(name, formValues[name]);
+    setFormErrors((prevErrors) => ({
+      ...prevErrors,
+      [name]: fieldError,
+    }));
+  };
+
+  const validateField = (fieldName, value) => {
+    switch (fieldName) {
+      case "name":
+        return value.trim() ? "" : "Nom requis";
+      case "subject":
+        return value.trim() ? "" : "Objet requis";
+      case "email":
+        return validateEmail(value) ? "" : "Adresse email invalide";
+      case "comment":
+        return value.trim() ? "" : "Veuillez ajouter un commentaire";
+      default:
+        return "";
+    }
+  };
+
+  const validateForm = () => {
+    const errors = {};
+    Object.keys(formValues).forEach((key) => {
+      const error = validateField(key, formValues[key]);
+      if (error) {
+        errors[key] = error;
+      }
+    });
+    setFormErrors(errors);
+    return Object.keys(errors).length === 0;
   };
 
   const handleFormSubmit = async (e) => {
     e.preventDefault();
+
+    if (!validateForm()) {
+      return;
+    }
 
     notificationCtx.showNotification({
       title: "Nous contactez...",
@@ -109,6 +157,9 @@ function ContactContent() {
             >
               Nom
             </label>
+            {formErrors.name && (
+              <p className={classes.error}>{formErrors.name}</p>
+            )}
           </div>
           <div className={classes.formGroup}>
             <input
@@ -131,6 +182,9 @@ function ContactContent() {
             >
               E-mail
             </label>
+            {formErrors.email && (
+              <p className={classes.error}>{formErrors.email}</p>
+            )}
           </div>
           <div className={classes.formGroup}>
             <input
@@ -153,6 +207,9 @@ function ContactContent() {
             >
               Objet
             </label>
+            {formErrors.subject && (
+              <p className={classes.error}>{formErrors.subject}</p>
+            )}
           </div>
           <div className={classes.formGroup}>
             <textarea
@@ -174,6 +231,9 @@ function ContactContent() {
             >
               Votre message
             </label>
+            {formErrors.comment && (
+              <p className={classes.error}>{formErrors.comment}</p>
+            )}
           </div>
           <div className={classes.formGroup}>
             <Button>Envoyer</Button>

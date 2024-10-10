@@ -73,7 +73,7 @@
 .formGroup {
   position: relative; /*Important for floating labels*/
   flex: 1;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   text-align: center;
 }
 
@@ -92,6 +92,14 @@
 .formGroup textarea:focus {
   border: 2px solid #00bfa6;
   outline: none;
+}
+
+.formGroup .error {
+  position: absolute;
+  color: red;
+  font-size: 12px;
+  text-align: left;
+  margin-top: 4px;
 }
 
 /*floating label*/
