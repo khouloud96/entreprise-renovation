@@ -59,7 +59,7 @@ function Header() {
       className={`${classes.header} ${isScrolled ? classes.scrolled : ""}`}
     >
       <Link href="/" className={classes.logo}>
-        <Image src="/logo-2.png" alt="Logo" width={50} height={50} />
+        <Image src="/logo/logo-2.png" alt="Logo" width={50} height={50} />
       </Link>
 
       {isMobile && (
