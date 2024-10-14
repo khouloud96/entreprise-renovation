@@ -74,7 +74,7 @@ function Header() {
       className={`${classes.header} ${isScrolled ? classes.scrolled : ""}`}
     >
       <Link href="/" className={classes.logo}>
-        <img src="/logo-2.png" alt="Logo" />
+        <img src="/logo-entreprise-fond-transparent.png" alt="Logo" />
         <p>
           <span className={classes.cursive}>Construction et</span>
           <br />
