@@ -26,11 +26,22 @@
   height: 92px;
 }
 
-.header h1 {
-  font-family: "Poppins-extralight", sans-serif;
+.logo p {
+  margin-left: 10px;
+}
+
+.cursive {
+  font-family: "Georgia", "Times New Roman", serif;
+  font-style: italic;
+  font-size: 16px;
+  color: #000;
+}
+
+.decorative {
+  font-family: "Pacifico", cursive;
+  font-size: 22px;
+  font-weight: bold;
   color: #5a77c8;
-  font-weight: 500;
-  padding-left: 15px;
 }
 
 .navLinks {
@@ -80,12 +91,20 @@
   .logo img {
     width: 68px;
     height: 68px;
+    margin-left: 180px;
   }
 
-  .logo h1 {
-    font-size: 1.25rem;
+  .logo p {
+    margin-left: 0;
   }
 
+  .cursive {
+    font-size: 12px;
+  }
+
+  .decorative {
+    font-size: 14px;
+  }
   .icons {
     font-size: 24px;
     cursor: pointer;
@@ -117,7 +136,7 @@
     flex-direction: column;
     align-items: center;
     background-color: #fff;
-    margin-top: 11px;
+    margin-top: 9px;
     margin-right: -96px;
     width: 62%;
   }

@@ -1,4 +1,3 @@
-// components/Header.js
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
@@ -6,11 +5,27 @@ import classes from "./header.module.css";
 import NavLink from "./nav-link";
 import OpenButtonIcon from "../icons/openButtonIcon";
 import CloseButtonIcon from "../icons/closeButtonIcon";
+import { useRouter } from "next/router";
 
 function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
+
+  const router = useRouter();
+
+  // Fermer le menu lors du changement de page
+  useEffect(() => {
+    const handleRouteChange = () => {
+      setMenuOpen(false); // Ferme le menu lors du changement de route
+    };
+
+    router.events.on("routeChangeComplete", handleRouteChange);
+
+    return () => {
+      router.events.off("routeChangeComplete", handleRouteChange);
+    };
+  }, [router.events]);
 
   // Detect if the user has scrolled and apply floating effect
   useEffect(() => {
@@ -60,6 +75,11 @@ function Header() {
     >
       <Link href="/" className={classes.logo}>
         <img src="/logo-2.png" alt="Logo" />
+        <p>
+          <span className={classes.cursive}>Construction et</span>
+          <br />
+          <span className={classes.decorative}>RÉNOVATION</span>
+        </p>
       </Link>
 
       {isMobile && (
