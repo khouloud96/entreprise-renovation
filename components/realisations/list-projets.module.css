@@ -3,10 +3,38 @@
   margin: 0;
   padding: 0;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
-  gap: 3.5rem;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(18rem, 1fr)
+  ); /* Adjust min width */
+  gap: 2.5rem;
   align-content: center;
   margin-bottom: 80px;
+}
+
+/* Responsive grid */
+@media (max-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(
+      auto-fill,
+      minmax(16rem, 1fr)
+    ); /* Adjust grid for smaller screens */
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .grid {
+    grid-template-columns: 1fr; /* Single column on very small screens */
+    gap: 1rem;
+  }
 }
 
 .image {

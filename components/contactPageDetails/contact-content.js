@@ -131,7 +131,6 @@ function ContactContent() {
 
   return (
     <section className={classes.content}>
-      <MyMap />
       <div className={classes.container}>
         <h1>Formulaire de Contact</h1>
 
@@ -240,6 +239,7 @@ function ContactContent() {
           </div>
         </form>
       </div>
+      <MyMap />
     </section>
   );
 }
