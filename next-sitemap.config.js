@@ -1,4 +1,4 @@
 module.exports = {
-  siteUrl: "http://localhost:3000/",
-  generateRobotsTxt: true,
+  siteUrl: process.env.BASE_URL || "http://localhost:3000",
+  generateRobotsTxt: true, // Génère un fichier robots.txt
 };
