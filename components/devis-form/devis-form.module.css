@@ -86,6 +86,7 @@
   background-color: transparent;
   padding: 10px;
   transition: all 0.2s ease;
+  padding: 13px;
 }
 
 .formGroup input:focus,
