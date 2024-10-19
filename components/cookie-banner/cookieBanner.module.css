@@ -35,3 +35,11 @@
 .button:hover {
   background-color: #9eb3b0;
 }
+
+@media (max-width: 768px) {
+  .banner {
+    flex-direction: column;
+    gap: 8px;
+    line-height: 24px;
+  }
+}
