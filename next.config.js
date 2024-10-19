@@ -3,7 +3,7 @@ const withTM = require("next-transpile-modules")(["react-leaflet", "leaflet"]);
 const { PHASE_DEVELOPMENT_SERVER } = require("next/constants");
 
 module.exports = (phase) => {
-  if (PHASE_DEVELOPMENT_SERVER) {
+  if (phase === PHASE_DEVELOPMENT_SERVER) {
     return withTM({
       env: {
         EMAIL_USER: "anismiss789@gmail.com",

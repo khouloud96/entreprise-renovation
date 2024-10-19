@@ -4,6 +4,7 @@ import Footer from "../footer/footer";
 import Header from "../header/header";
 import NotificationContext from "../../store/notification-context";
 import Notification from "../ui/notification";
+import CookieBanner from "../cookie-banner/cookieBanner";
 
 function Layout(props) {
   const notificationCtx = useContext(NotificationContext);
@@ -23,6 +24,7 @@ function Layout(props) {
       )}
       <ContactUs />
       <Footer />
+      <CookieBanner />
     </Fragment>
   );
 }

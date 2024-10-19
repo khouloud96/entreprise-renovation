@@ -1,0 +1,37 @@
+.banner {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #1a202c;
+  color: white;
+  padding: 1rem 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.text {
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.link {
+  text-decoration: underline;
+  color: #90cdf4;
+}
+
+.button {
+  background-color: #46aea0;
+  color: black;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-weight: 600;
+}
+
+.button:hover {
+  background-color: #9eb3b0;
+}
