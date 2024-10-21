@@ -32,8 +32,13 @@
 
 .icon {
   font-size: 2.5rem;
-  color: #00bfa5;
   margin-bottom: 15px;
+  margin-top: 10px;
+}
+
+.icon img {
+  filter: invert(1);
+  color: #00bfa5;
 }
 
 .serviceBox h3 {

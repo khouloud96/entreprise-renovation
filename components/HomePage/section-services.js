@@ -31,9 +31,9 @@ function SectionPhotos({ content }) {
           >
             <div className={classes.icon}>
               <Image
-                src="/icons/check-solid.svg"
-                width={18}
-                height={18}
+                src="/icons/ico_pencil.png"
+                width={50}
+                height={50}
                 alt="check"
               />
             </div>
@@ -53,9 +53,9 @@ function SectionPhotos({ content }) {
           >
             <div className={classes.icon}>
               <Image
-                src="/icons/check-solid.svg"
-                width={18}
-                height={18}
+                src="/icons/ico_peinture.png"
+                width={50}
+                height={50}
                 alt="check"
               />
             </div>
@@ -73,14 +73,14 @@ function SectionPhotos({ content }) {
           >
             <div className={classes.icon}>
               <Image
-                src="/icons/check-solid.svg"
-                width={18}
-                height={18}
+                src="/icons/ico_marteau.png"
+                width={50}
+                height={50}
                 alt="check"
               />
             </div>
             <h3>{content.service3}</h3>
-            <p>{content.description3}</p>
+            <ReactMarkdown>{content.description3}</ReactMarkdown>
           </div>
         </div>
       </div>

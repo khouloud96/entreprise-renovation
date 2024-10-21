@@ -1,22 +1,33 @@
 ---
-service1: "Portes et fenêtres"
-description1: "Faites confiance à notre entreprise pour le choix et l'installation de vos portes et fenêtres. Nous sommes distributeur et installateur des produits Fene-Tech. [https://www.fene-tech.com](https://www.fene-tech.com) Des produits de qualité répondants aux normes exigées par le code du bâtiment."
+service1: "Consultation et devis personnalisés"
+description1:
+  "Nous garantissons un soutien personnalisé pour votre projet. Cela comprend la réalisation d'études de faisabilité, la proposition de conseils adaptés à vos besoins et à votre budget, ainsi que la création de devis détaillés et transparents afin d'assurer une prise de décision éclairée.
+  "
 service2: "Construction et Rénovation"
 description2:
-  "De la rénovation de votre cuisine, jusqu'à la démolition d'une vieille cheminée, nous effectuons ou gérons toutes vos rénovations. Vous préférez le neuf, aucun problème nous construisons également des maisons, des garages, ou des agrandissements.
+  "Nous nous occupons de toutes vos rénovations, que ce soit la rénovation de votre cuisine ou la démolition d'une vieille cheminée. Si vous avez une préférence pour le neuf, nous sommes également en mesure de construire des maisons, des garages ou des extensions.
 
-  - Rénovations intérieures et extérieures
+  - Rénovation intérieure (salle de bain, cuisine, aménagement intérieur)
 
-  - Galerie, patio, clôture
+  - Rénovation extérieure (façades, toitures)
 
-  - Travaux de reconstruction après sinistre
-
-  - Agrandissement
+  - Transformation et extension de maisons
 
   - Construction de Garage
 
   - Construction neuve
   "
-service3: "Gestion de chantiers et sous-traitants"
-description3: "Faites appel à nos services de gestion et de coordination pour gérer votre chantier, cette étape importante vous sera facilitée via l'entrepreneur général. Ce dernier est en relation direct et constante avec tous les corps de métier du bâtiment."
+service3: "Travaux de second œuvre"
+description3:
+  "Après la phase de gros œuvre, nous garantissons le confort, la sécurité et la fonctionnalité des bâtiments.
+
+  - Installation électrique
+
+  - Plomberie et installation de systèmes de chauffage
+
+  - Ventilation et climatisation
+
+  - Pose de systèmes de sécurité (alarmes, vidéosurveillance)
+
+  "
 ---

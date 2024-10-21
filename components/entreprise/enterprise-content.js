@@ -32,20 +32,21 @@ function EnterpriseContent() {
         <div className={classes.hero}>
           <h1>BPI Entreprise de rénovation</h1>
           <p>
-            BPI société spécialisée dans les projets de rénovation globale. Nous
-            proposons une large palette de services s'étendant du conseil à la
-            gestion complète d'opérations, de la conception à la réalisation, et
-            aux travaux <strong>“CLE EN MAINS”</strong>.{" "}
+            BPI une <strong>entreprise générale de bâtiment </strong>. Nous
+            offrons une variété de services allant du conseil à la gestion
+            intégrale des opérations, de la conception à la mise en œuvre, ainsi
+            que des travaux <strong>"CLE EN MAINS"</strong>.
           </p>
+
           <p>
-            Rénovation d'appartements, maisons, bureaux. Nous maîtrisons
-            l'ensemble des métiers traditionnels de la{" "}
-            <strong>rénovation intérieur et extérieur </strong> afin de vous
-            proposer <strong>une prestation clés en main </strong> de qualité
-            professionnelle : refonte complète de salle de bains et cuisine ,
-            restauration de parquet ancien, remplacement de portes et fenêtres ,
-            création de nouveaux agencements, pose de cuisine, ainsi que
-            l'ensemble des lots usuels du bâtiment tels que plomberie,
+            Rénovation d'appartements, maisons, bureaux. Nous avons une
+            expertise dans tous les domaines traditionnels de la{" "}
+            <strong>rénovation intérieur et extérieur </strong> ce qui nous
+            permet de vous offrir <strong>une prestation clés en main </strong>{" "}
+            de qualité professionnelle : refonte complète de salle de bains et
+            cuisine, restauration de parquet ancien, remplacement de portes et
+            fenêtres, création de nouveaux agencements, pose de cuisine, ainsi
+            que l'ensemble des lots usuels du bâtiment tels que plomberie,
             électricité, isolation, rénovation des peinture.{" "}
           </p>
           <p>
@@ -62,6 +63,12 @@ function EnterpriseContent() {
           attachons une grande importance à la <strong>qualité</strong> de nos
           prestations. Nous accordons en effet une attention particulière sur
           les détails, et le suivi de votre projet.
+        </p>
+        <p>
+          Afin d'améliorer votre confort, BPI Rénovation assure la gestion
+          complète des travaux et coordonne l'ensemble du projet. Vous n'avez
+          aucune responsabilité, nous nous chargeons de l'organisation et de la
+          gestion du chantier.
         </p>
         <p>
           Nous vous invitons à demander en ligne un{" "}

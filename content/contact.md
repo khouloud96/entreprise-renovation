@@ -4,7 +4,7 @@ layout: "contact"
 draft: false
 info:
   description: "Vous souhaitez obtenir des informations sur nos prestations, des conseils en matière de rénovation ou un devis pour des travaux?"
-  phone: "+33 7 78 63 74"
+  phone: "08 92 97 64 38"
   email: "bpi@gmail.com"
-  address: "360 Main rd, Rio, France"
+  address: "101 RUE VICTOR HUGO 94200 IVRY-SUR-SEINE"
 ---

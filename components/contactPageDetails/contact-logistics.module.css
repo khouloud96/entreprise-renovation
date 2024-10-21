@@ -25,9 +25,8 @@
 }
 
 .list li {
-  padding-right: 83px;
+  padding-right: 46px;
   padding-top: 36px;
-  padding-left: 69px;
 }
 
 @media (min-width: 768px) {
@@ -37,6 +36,9 @@
     gap: 3rem;
     flex-direction: row;
     align-items: stretch;
+  }
+  .list li {
+    width: 100%;
   }
 }
 

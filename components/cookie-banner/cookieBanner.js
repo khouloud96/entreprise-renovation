@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import styles from "./cookieBanner.module.css";
+import classes from "./cookieBanner.module.css";
 
 const CookieBanner = () => {
   const [showBanner, setShowBanner] = useState(false);
@@ -23,15 +23,15 @@ const CookieBanner = () => {
   if (!showBanner) return null;
 
   return (
-    <div className={styles.banner}>
-      <p className={styles.text}>
+    <div className={classes.banner}>
+      <p className={classes.text}>
         Ce site utilise des cookies pour vous offrir de meilleurs services. En
         poursuivant votre navigation, vous en acceptez l'utilisation.{" "}
-        <a href="/cookies-policy" className={styles.link}>
+        <a href="/mentions" className={classes.link}>
           en savoir plus
         </a>
       </p>
-      <button onClick={acceptCookies} className={styles.button}>
+      <button onClick={acceptCookies} className={classes.button}>
         Accepter
       </button>
     </div>

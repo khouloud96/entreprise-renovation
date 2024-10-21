@@ -23,13 +23,13 @@
       }
       .header {
         text-align: center;
-        padding: 20px 0;
         background-color: #00bfa6;
         color: #ffffff;
       }
       .content {
         padding: 20px;
         font-size: 14px;
+        text-align: center;
       }
       .footer {
         text-align: center;
@@ -37,33 +37,37 @@
         color: #999999;
         font-size: 14px;
       }
-      .footer img {
-        width: 300px;
+      .image img {
+        width: 200px;
         height: auto;
-        margin-top: 10px;
-        margin-left: -58px;
+        margin-left: 177px;
       }
     </style>
   </head>
   <body>
     <div class="container">
+      <div class="image">
+        <img src="cid:headerLogo" alt="Header Logo" />
+      </div>
       <div class="header">
         <h1>{{subject}}</h1>
       </div>
       <div class="content">
         <p>Bonjour {{name}},</p>
-        <p>Merci pour votre demande de devis. Voici les détails fournis :</p>
-        <ul>
-          <li><strong>Nom :</strong> {{name}}</li>
-          <li><strong>Téléphone :</strong> {{phone}}</li>
-          <li><strong>Adresse des travaux :</strong> {{address}}</li>
-          <li><strong>Commentaires :</strong> {{comment}}</li>
-        </ul>
-        <p>Nous vous contacterons sous peu pour plus de détails.</p>
+        <p>Nous vous remercions sincèrement pour votre demande de devis.</p>
+        <p>
+          Notre équipe prendra contact avec vous très prochainement pour
+          discuter des détails de votre projet et s'assurer que vos besoins sont
+          parfaitement compris.
+        </p>
+        <p>
+          Nous vous remercions de la confiance que vous accordez à nos services
+          et restons à votre disposition pour toute question complémentaire.
+        </p>
       </div>
       <div class="footer">
-        <p>Merci de faire confiance à notre service.</p>
-        <img src="cid:footerLogo" alt="Footer Logo" />
+        <p>Cordialement,</p>
+        <p>Votre équipe BPI</p>
       </div>
     </div>
   </body>

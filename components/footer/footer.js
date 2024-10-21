@@ -66,13 +66,8 @@ export default function Footer() {
       <div className={classes.privacyPolicy}>
         <ul>
           <li>
-            <Link href="/privacy" className={classes.linkPrivacy}>
-              Politique de confidentialité
-            </Link>
-          </li>
-          <li>
-            <Link href="/do-not-sell" className={classes.linkPrivacy}>
-              Do Not Sell My Personal Information
+            <Link href="/mentions" className={classes.linkPrivacy}>
+              Mentions Légales | Politique de Confidentialité
             </Link>
           </li>
         </ul>

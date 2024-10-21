@@ -29,27 +29,27 @@ function Carousel1() {
     {
       id: 1,
       title: "image 1",
-      image: "/images/construction-immeuble.webp",
+      image: "/images/realisation-1.jpg",
     },
     {
       id: 2,
       title: "image 2",
-      image: "/images/construction.jpg",
+      image: "/images/realisation-4.jpg",
     },
     {
       id: 3,
       title: "image 3",
-      image: "/images/construction-immeuble-et-petit-collectif.jpg",
+      image: "/images/realisation-5.jpg",
     },
     {
       id: 4,
       title: "image 4",
-      image: "/images/construction-lyon.jpg",
+      image: "/images/realisation-6.jpg",
     },
     {
       id: 5,
       title: "image 5",
-      image: "/images/Grenoble-ALPES-JARDIN.jpg",
+      image: "/images/realisation-7.jpg",
     },
   ];
 
