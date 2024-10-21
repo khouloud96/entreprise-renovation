@@ -3,6 +3,7 @@ import classes from "./contact-content.module.css";
 import Button from "../ui/button";
 import NotificationContext from "../../store/notification-context";
 import MyMap from "../map/map";
+import { FaClipboard, FaComment, FaEnvelope, FaUser } from "react-icons/fa";
 
 function ContactContent() {
   const notificationCtx = useContext(NotificationContext);
@@ -154,7 +155,7 @@ function ContactContent() {
                   : classes.label
               }
             >
-              Nom
+              <FaUser /> Nom
             </label>
             {formErrors.name && (
               <p className={classes.error}>{formErrors.name}</p>
@@ -179,7 +180,7 @@ function ContactContent() {
                   : classes.label
               }
             >
-              E-mail
+              <FaEnvelope /> E-mail
             </label>
             {formErrors.email && (
               <p className={classes.error}>{formErrors.email}</p>
@@ -204,7 +205,7 @@ function ContactContent() {
                   : classes.label
               }
             >
-              Objet
+              <FaClipboard /> Objet
             </label>
             {formErrors.subject && (
               <p className={classes.error}>{formErrors.subject}</p>
@@ -228,7 +229,7 @@ function ContactContent() {
                   : classes.label
               }
             >
-              Votre message
+              <FaComment /> Votre message
             </label>
             {formErrors.comment && (
               <p className={classes.error}>{formErrors.comment}</p>

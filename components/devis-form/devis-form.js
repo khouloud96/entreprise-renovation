@@ -3,6 +3,13 @@ import { useContext, useState } from "react";
 import classes from "./devis-form.module.css";
 import NotificationContext from "../../store/notification-context";
 import Button from "../ui/button";
+import {
+  FaComment,
+  FaEnvelope,
+  FaMapMarkerAlt,
+  FaPhone,
+  FaUser,
+} from "react-icons/fa";
 
 function DevisForm() {
   const notificationCtx = useContext(NotificationContext);
@@ -202,7 +209,7 @@ function DevisForm() {
                   : classes.label
               }
             >
-              Prénom
+              <FaUser /> Prénom
             </label>
             {formErrors.name && (
               <p className={classes.error}>{formErrors.name}</p>
@@ -227,7 +234,7 @@ function DevisForm() {
                   : classes.label
               }
             >
-              Nom de famille
+              <FaUser /> Nom de famille
             </label>
             {formErrors.lastName && (
               <p className={classes.error}>{formErrors.lastName}</p>
@@ -252,7 +259,7 @@ function DevisForm() {
                   : classes.label
               }
             >
-              Téléphone
+              <FaPhone /> Téléphone
             </label>
             {formErrors.phone && (
               <p className={classes.error}>{formErrors.phone}</p>
@@ -277,7 +284,7 @@ function DevisForm() {
                   : classes.label
               }
             >
-              E-mail
+              <FaEnvelope /> E-mail
             </label>
             {formErrors.email && (
               <p className={classes.error}>{formErrors.email}</p>
@@ -302,7 +309,7 @@ function DevisForm() {
                   : classes.label
               }
             >
-              Adresse des travaux
+              <FaMapMarkerAlt /> Adresse des travaux
             </label>
             {formErrors.address && (
               <p className={classes.error}>{formErrors.address}</p>
@@ -326,7 +333,7 @@ function DevisForm() {
                   : classes.label
               }
             >
-              Commentaires
+              <FaComment /> Commentaires
             </label>
             {formErrors.comment && (
               <p className={classes.error}>{formErrors.comment}</p>
