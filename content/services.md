@@ -1,7 +1,7 @@
 ---
-service1: "Consultation et devis personnalisés"
+service1: "Devis personnalisés"
 description1:
-  "Nous garantissons un soutien personnalisé pour votre projet. Cela comprend la réalisation d'études de faisabilité, la proposition de conseils adaptés à vos besoins et à votre budget, ainsi que la création de devis détaillés et transparents afin d'assurer une prise de décision éclairée.
+  "Nous garantissons un **soutien personnalisé** pour votre projet. Cela comprend la réalisation d'études de faisabilité, la proposition de conseils adaptés à vos **besoins** et à votre **budget**, ainsi que la création de **devis détaillés et transparents** afin d'assurer une prise de décision éclairée.
   "
 service2: "Construction et Rénovation"
 description2:
@@ -19,7 +19,7 @@ description2:
   "
 service3: "Travaux de second œuvre"
 description3:
-  "Après la phase de gros œuvre, nous garantissons le confort, la sécurité et la fonctionnalité des bâtiments.
+  "Après la phase de gros œuvre, nous garantissons le **confort**, la **sécurité** et la **fonctionnalité des bâtiments**.
 
   - Installation électrique
 

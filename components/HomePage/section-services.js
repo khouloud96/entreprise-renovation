@@ -32,8 +32,8 @@ function SectionPhotos({ content }) {
             <div className={classes.icon}>
               <Image
                 src="/icons/ico_pencil.png"
-                width={50}
-                height={50}
+                width={70}
+                height={70}
                 alt="check"
               />
             </div>
@@ -54,8 +54,8 @@ function SectionPhotos({ content }) {
             <div className={classes.icon}>
               <Image
                 src="/icons/ico_peinture.png"
-                width={50}
-                height={50}
+                width={70}
+                height={70}
                 alt="check"
               />
             </div>
@@ -74,8 +74,8 @@ function SectionPhotos({ content }) {
             <div className={classes.icon}>
               <Image
                 src="/icons/ico_marteau.png"
-                width={50}
-                height={50}
+                width={70}
+                height={70}
                 alt="check"
               />
             </div>
