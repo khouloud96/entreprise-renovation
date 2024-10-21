@@ -1,44 +1,106 @@
+/* Container for the entire section */
 .sectionIntro {
+  position: relative;
   height: 650px;
-  background-image: url(/images/construction-immeuble.webp);
   background-size: cover;
   padding: 10px;
   margin-top: 60px;
-  display: inline-block;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-bottom: 6px;
+  position: relative;
+  overflow: hidden;
 }
+
+/* Background images container with fast fade transition and no white gap */
+.backgroundImages {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  animation: fastFadeBackground 10s infinite ease-in-out; /* Adjust duration */
+  z-index: -1;
+}
+
+/* Keyframes for fading and changing background images */
+@keyframes fastFadeBackground {
+  0% {
+    opacity: 1;
+    background-image: url("/projets/realisation-8.jpg");
+  }
+  25% {
+    opacity: 1;
+    background-image: url("/projets/realisation-9.jpg");
+  }
+  30% {
+    opacity: 0; /* Start fading out */
+  }
+  35% {
+    opacity: 1; /* Start fading in the next image */
+    background-image: url("/projets/realisation-1.jpg");
+  }
+  60% {
+    opacity: 1;
+    background-image: url("/projets/realisation-4.jpg");
+  }
+  65% {
+    opacity: 0; /* Start fading out */
+  }
+  70% {
+    opacity: 1; /* Fade in the first image again */
+    background-image: url("/projets/realisation-8.jpg");
+  }
+  100% {
+    opacity: 1; /* Ensure opacity is at 1 at the end */
+    background-image: url("/projets/realisation-8.jpg"); /* Repeat the last image to avoid white */
+  }
+}
+
+/* Styling for the heading */
 .sectionIntro h1 {
   text-align: center;
   color: #ffffff;
   font-size: 4em;
   font-weight: 500;
+  position: relative;
+  z-index: 1;
 }
 
-.sectionIntro header {
-  display: flex;
-  flex: 4;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+/* Logo container to center and fix it */
+.logoContainer {
+  position: relative;
+  z-index: 1;
 }
 
+/* Styling for the logo */
+.logo {
+  max-width: 200px;
+  height: auto;
+}
+
+/* Links wrapper styling */
 .linksWrapper {
   display: flex;
   flex-direction: row;
   gap: 10px;
   padding: 80px 0;
+  position: relative;
+  z-index: 1; /* Above the background */
 }
 
+/* Individual link styling */
 .link {
   font-family: "Poppins", sans-serif;
   font-size: 16px;
   color: #ffffff;
   border: 2px solid #ffffff;
   padding: 5px 10px;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .link:hover {
@@ -47,23 +109,7 @@
   text-decoration: none;
 }
 
-/* Contenu fixe (au-dessus des images) */
-.content {
-  position: relative;
-  text-align: center;
-  z-index: 1; /* Met le texte au-dessus des images */
-}
-
-/* Div fixée */
-.fixedBox {
-  background-color: rgba(255, 255, 255, 0.2);
-  border: 1px solid white;
-  padding: 20px;
-  border-radius: 10px;
-  margin-top: 20px;
-  display: inline-block;
-}
-
+/* Responsive adjustments */
 @media (max-width: 768px) {
   .sectionIntro {
     height: 600px;
@@ -72,7 +118,6 @@
   .sectionIntro h1 {
     font-size: 25px;
   }
-
   .linksWrapper {
     flex-direction: column;
     padding: 20px 0;
