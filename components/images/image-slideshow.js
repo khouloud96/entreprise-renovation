@@ -6,42 +6,42 @@ const images = [
   {
     id: 1,
     alt: "image 1",
-    image: "/images/construction-immeuble.webp",
+    image: "/images/realisation-1.jpg",
   },
   {
     id: 2,
     alt: "image 2",
-    image: "/images/construction.jpg",
+    image: "/images/realisation-4.jpg",
   },
   {
     id: 6,
     alt: "image 6",
-    image: "/images/chantier.webp",
+    image: "/images/realisation-5.jpg",
   },
   {
     id: 3,
     alt: "image 3",
-    image: "/images/construction-immeuble-et-petit-collectif.jpg",
+    image: "/images/realisation-6.jpg",
   },
   {
     id: 7,
     alt: "image 7",
-    image: "/images/appartement.webp",
+    image: "/images/salon.jpg",
   },
   {
     id: 4,
     alt: "image 4",
-    image: "/images/construction-lyon.jpg",
+    image: "/images/coin.jpg",
   },
   {
     id: 5,
     alt: "image 5",
-    image: "/images/Grenoble-ALPES-JARDIN.jpg",
+    image: "/images/cheminee.jpg",
   },
   {
     id: 8,
     alt: "image 8",
-    image: "/images/batiment.webp",
+    image: "/images/escalier.jpg",
   },
 ];
 

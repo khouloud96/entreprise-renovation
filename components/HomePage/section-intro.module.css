@@ -31,33 +31,33 @@
 @keyframes fastFadeBackground {
   0% {
     opacity: 1;
-    background-image: url("/projets/realisation-8.jpg");
+    background-image: url("/sectionIntro/salon-1.jpg");
   }
   25% {
     opacity: 1;
-    background-image: url("/projets/realisation-9.jpg");
+    background-image: url("/sectionIntro/cuisine.jpg");
   }
   30% {
-    opacity: 0; /* Start fading out */
+    opacity: 1;
   }
   35% {
-    opacity: 1; /* Start fading in the next image */
-    background-image: url("/projets/realisation-1.jpg");
+    opacity: 1;
+    background-image: url("/sectionIntro/salle-de-bain.jpg");
   }
   60% {
     opacity: 1;
-    background-image: url("/projets/realisation-4.jpg");
+    background-image: url("/sectionIntro/salon.jpg");
   }
   65% {
-    opacity: 0; /* Start fading out */
+    opacity: 1;
   }
   70% {
-    opacity: 1; /* Fade in the first image again */
-    background-image: url("/projets/realisation-8.jpg");
+    opacity: 1;
+    background-image: url("/sectionIntro/salon-1.jpg");
   }
   100% {
-    opacity: 1; /* Ensure opacity is at 1 at the end */
-    background-image: url("/projets/realisation-8.jpg"); /* Repeat the last image to avoid white */
+    opacity: 1;
+    background-image: url("/sectionIntro/salon.jpg");
   }
 }
 
