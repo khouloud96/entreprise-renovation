@@ -2,7 +2,7 @@
   max-width: 42rem;
   margin: 0 auto;
   padding: 1rem;
-  font-family: "Pacifico", cursive;
+  font-family: "Lato", arial, sans-serif;
 }
 
 .mainTitle {
@@ -57,4 +57,16 @@
   font-style: italic;
   margin-top: 2rem;
   text-align: right;
+}
+
+@media (max-width: 768px) {
+  .mainTitle {
+    font-size: 30px;
+  }
+  .subTitle {
+    font-size: 14px;
+  }
+  .paragraph {
+    font-size: 13px;
+  }
 }

@@ -29,13 +29,12 @@
 
 .cursive {
   font-family: "Georgia", "Times New Roman", serif;
-  font-style: italic;
   font-size: 16px;
   color: #000;
 }
 
 .decorative {
-  font-family: "Pacifico", cursive;
+  font-family: "Lato", arial, sans-serif;
   font-size: 22px;
   font-weight: bold;
   color: #5a77c8;
