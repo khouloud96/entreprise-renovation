@@ -155,7 +155,10 @@ function ContactContent() {
                   : classes.label
               }
             >
-              <FaUser /> Nom
+              <span className={classes.icon}>
+                <FaUser />{" "}
+              </span>{" "}
+              Nom
             </label>
             {formErrors.name && (
               <p className={classes.error}>{formErrors.name}</p>
@@ -180,7 +183,10 @@ function ContactContent() {
                   : classes.label
               }
             >
-              <FaEnvelope /> E-mail
+              <span className={classes.icon}>
+                <FaEnvelope />{" "}
+              </span>{" "}
+              E-mail
             </label>
             {formErrors.email && (
               <p className={classes.error}>{formErrors.email}</p>
@@ -205,7 +211,10 @@ function ContactContent() {
                   : classes.label
               }
             >
-              <FaClipboard /> Objet
+              <span className={classes.icon}>
+                <FaClipboard />{" "}
+              </span>{" "}
+              Objet
             </label>
             {formErrors.subject && (
               <p className={classes.error}>{formErrors.subject}</p>
@@ -229,7 +238,10 @@ function ContactContent() {
                   : classes.label
               }
             >
-              <FaComment /> Votre message
+              <span className={classes.icon}>
+                <FaComment />
+              </span>{" "}
+              Votre message
             </label>
             {formErrors.comment && (
               <p className={classes.error}>{formErrors.comment}</p>

@@ -209,7 +209,10 @@ function DevisForm() {
                   : classes.label
               }
             >
-              <FaUser /> Prénom
+              <span className={classes.icon}>
+                <FaUser />{" "}
+              </span>
+              Prénom
             </label>
             {formErrors.name && (
               <p className={classes.error}>{formErrors.name}</p>
@@ -234,7 +237,10 @@ function DevisForm() {
                   : classes.label
               }
             >
-              <FaUser /> Nom de famille
+              <span className={classes.icon}>
+                <FaUser />
+              </span>{" "}
+              Nom de famille
             </label>
             {formErrors.lastName && (
               <p className={classes.error}>{formErrors.lastName}</p>
@@ -259,7 +265,10 @@ function DevisForm() {
                   : classes.label
               }
             >
-              <FaPhone /> Téléphone
+              <span className={classes.icon}>
+                <FaPhone />{" "}
+              </span>{" "}
+              Téléphone
             </label>
             {formErrors.phone && (
               <p className={classes.error}>{formErrors.phone}</p>
@@ -284,7 +293,10 @@ function DevisForm() {
                   : classes.label
               }
             >
-              <FaEnvelope /> E-mail
+              <span className={classes.icon}>
+                <FaEnvelope />{" "}
+              </span>{" "}
+              E-mail
             </label>
             {formErrors.email && (
               <p className={classes.error}>{formErrors.email}</p>
@@ -309,7 +321,10 @@ function DevisForm() {
                   : classes.label
               }
             >
-              <FaMapMarkerAlt /> Adresse des travaux
+              <span className={classes.icon}>
+                <FaMapMarkerAlt />{" "}
+              </span>{" "}
+              Adresse des travaux
             </label>
             {formErrors.address && (
               <p className={classes.error}>{formErrors.address}</p>
@@ -333,7 +348,10 @@ function DevisForm() {
                   : classes.label
               }
             >
-              <FaComment /> Commentaires
+              <span className={classes.icon}>
+                <FaComment />{" "}
+              </span>{" "}
+              Commentaires
             </label>
             {formErrors.comment && (
               <p className={classes.error}>{formErrors.comment}</p>
